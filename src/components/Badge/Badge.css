@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.badge{
+    display: inline-block;
+    padding: 2px 10px;
+    padding-top: 3px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: regular;
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+
+}
+
+.badge-pill{
+    border-radius: 20px;
+}
+
+.badge-yellow {
+    background-color: #FFC700;
+    color: #000;
+  }
+
+.badge-green {
+    background-color: #29B929;
+    color: #fff;
+  }
+  
+.badge-icon{
+    margin-left: 3px;
+    font-size: .9em;
+}
