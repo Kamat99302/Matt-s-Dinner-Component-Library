@@ -1,16 +1,38 @@
-# React + Vite
+# Matt's Diner Component Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une bibliothèque de composants React pour une interface de borne de commande tactile de restaurant.
 
-Currently, two official plugins are available:
+## 🚧 Projet en cours de développement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce projet est actuellement en développement actif. La bibliothèque de composants est construite avec [Storybook](https://storybook.js.org/) pour la documentation et les tests.
 
-## React Compiler
+## 📋 Composants prévus
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Button** - Boutons (Primary, Secondary, Tertiary)
+- **Header** - En-tête de l'application
+- **ProductCard** - Carte produit pour le menu
+- **CartItemCard** - Carte article dans le panier
+- **Badge** - Badges pour les étiquettes
+- **CategoryTab** - Onglets de catégories
+- **QuantitySelector** - Sélecteur de quantité
+- **CheckboxArea** - Zone de cases à cocher
+- **LanguageSelector** - Sélecteur de langue
+- **StatusMessage** - Messages de statut
 
-## Expanding the ESLint configuration
+## 🛠️ Stack technique
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Storybook
+- Vite
+
+
+## 📐 Design
+
+Le design system et les maquettes UI ont été créés dans Figma, avec :
+- Support multilingue (Français/Anglais)
+- Interface optimisée pour écran tactile
+- Considérations d'accessibilité
+
+---
+
+*Ce projet fait partie de mon portfolio en tant que développeur React à la recherche d'une alternance.*
