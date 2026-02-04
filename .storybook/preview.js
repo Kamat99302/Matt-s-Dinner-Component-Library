@@ -1,3 +1,23 @@
+export const parameters = {
+  viewport: {
+    viewports: {
+      kiosk: {
+        name: 'Kiosk',
+        styles: {
+          width: '1080px',
+          height: '1920px',
+        },
+      },
+    },
+    defaultViewport: 'kiosk',
+  },
+  layout: 'fullscreen',
+};
+
+
+
+
+
 /** @type { import('@storybook/react-vite').Preview } */
 const preview = {
   parameters: {
