@@ -1,0 +1,15 @@
+.flag-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+img[alt="French"] {
+    width: 4.875rem;
+    height: 4.875rem;
+}
+
+img[alt="English"] {
+    width: 4.6875rem;
+    height: 4.6875rem;
+}
