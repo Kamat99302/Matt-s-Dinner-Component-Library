@@ -11,13 +11,13 @@ export default{
 
 export const Primary = {
     args: {
-        ShowNavIcons: true
+        showNavIcons: true
     }
 }
 
 
 export const Secondary = {
     args: {
-        ShowNavIcons: false
+        showNavIcons: false
     }
 }

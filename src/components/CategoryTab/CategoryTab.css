@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+nav{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    width: 100%;   
+}
+
+ul{
+    display: inline-flex;
+    gap: 6.2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    font-size: 2.5rem;         
+    font-weight: 700;           
+    color: #999999;
+    cursor: pointer;
+}
+
+li.highlighted{
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #FFC700;
+    text-decoration-thickness: 0.3125rem;
+    text-underline-offset: 0.5rem;
+}
