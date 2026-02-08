@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.card-container{
+    width: 32.563rem;
+    height: 30.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.image-wrapper {
+    position: relative; 
+    width: 21.063rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+
+}
+.image-wrapper .badge{
+    position: absolute;
+    z-index: 10;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-container p, .product-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.875rem;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+}
