@@ -1,6 +1,6 @@
 import Badge from "../Badge/Badge"
 import "../Badge/Badge.css"
-export default function ProductCard({includeBadge = true, img, productName, price, badgeColor="green", badgeVariant="square", showIcon, badgeText="New"}){
+export default function ProductCard({includeBadge = true, img, productName, productPrice, badgeColor="green", badgeVariant="square", showIcon, badgeText="New"}){
     return(
         <div className="card-container">
             <div className="image-wrapper">
@@ -15,7 +15,7 @@ export default function ProductCard({includeBadge = true, img, productName, pric
             <img src={img} alt={productName} />
         </div>
             <p>{productName}</p>
-            <span className="product-price">{price}</span>
+            <span className="product-price">{productPrice}</span>
             
         </div>
     )

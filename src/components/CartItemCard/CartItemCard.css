@@ -1,0 +1,103 @@
+.cart-item-card {
+    display: flex;
+    align-items: center;
+    max-width: 43.125rem;
+    width: 100%;
+    height: 13.8rem;
+    border: 2px solid #000;
+    background-color: #F5F5F5;
+    border-radius: 0.625rem; 
+    gap: 1.5rem;         
+    padding: 2.7rem 1.5rem; 
+}
+
+.card-left {
+    display: flex;
+    justify-content: center;
+    width: 11.25rem; 
+    height: 8rem;      
+    flex-shrink: 0;    
+    align-self: flex-start;
+}
+
+.card-left .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem; 
+}
+
+.card-center {        
+    display: flex;
+    flex: 1;   
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 550;
+    font-size: 2.625rem;
+    margin: 0;  
+}
+
+.product-options {
+    font-family: 'Inter', sans-serif;
+    color: #666666;
+    font-size: 1.375rem;
+    margin: 0 0 0.5rem 0;  
+}
+
+
+.card-center .quantity-selector-container {
+    flex-direction: row;      
+    align-items: center;     
+    gap: 0.5rem;            
+}
+
+.card-center .quantity-selector-container p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    margin: 0; 
+}
+
+.card-center .selector {
+    gap: 0.5rem;  
+}
+
+.card-center .selector .quantity {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem; 
+    
+}
+
+.card-center .selector .remove-btn {
+    width: 1.313rem;  
+    height: 1.313rem;
+}
+
+.card-center .selector .add-btn {
+    width: 1.6rem;  
+    height: 1.6rem;
+}
+
+.card-right {
+    display: flex;
+    margin-right: 1em;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.6em;
+}
+
+.product-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.625rem;
+}
+
+.delete-icon {
+    width: 1.68rem; 
+    height: 1.68rem;
+    cursor: pointer;
+    margin-left: 3.5em;
+
+}

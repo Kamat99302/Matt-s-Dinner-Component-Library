@@ -1,3 +1,5 @@
+import './preview.css';
+
 export const parameters = {
   viewport: {
     viewports: {

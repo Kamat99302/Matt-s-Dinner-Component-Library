@@ -15,7 +15,7 @@ export const MattsBurger = {
         showIcon: true,
         img: '/Burgers/matts-burger.jpg',
         productName: `Matt's Burger`,
-        price: '4.90€'
+        productPrice: '4.90€'
     }
 }
 
@@ -28,7 +28,7 @@ export const DoubleBeef = {
         showIcon: false,
         img: '/Burgers/double-beef.jpg',
         productName: `Double Beef`,
-        price: '5.90€'
+        productPrice: '5.90€'
     }
 }
 
@@ -41,7 +41,7 @@ export const SignatureBurger = {
         showIcon: false,
         img: '/Burgers/signature-burger.jpg',
         productName: `Signature Burger`,
-        price: '4.50€'
+        productPrice: '4.50€'
     }
 }
 
@@ -54,7 +54,7 @@ export const FishBurger = {
         showIcon: false,
         img: '/Burgers/fish-burger.webp',
         productName: `Fish Burger`,
-        price: '5.90€',
+        productPrice: '5.90€',
     }
 }
 
