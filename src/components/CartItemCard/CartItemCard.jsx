@@ -12,7 +12,7 @@ export default function CartItemCard({img, productName, productOptions, productP
                 <h3 className="product-name">{productName}</h3>
                 <p className="product-options">{productOptions}</p>
                 <QuantitySelector
-                    label="Qty"
+                    label="Qty: "
                     quantity={1}>
                 </QuantitySelector>
             </div>
