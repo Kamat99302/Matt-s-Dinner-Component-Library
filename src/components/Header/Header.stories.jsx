@@ -15,7 +15,6 @@ export const Primary = {
     }
 }
 
-
 export const Secondary = {
     args: {
         showNavIcons: false

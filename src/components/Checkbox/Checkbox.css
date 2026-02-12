@@ -24,14 +24,38 @@
 .customization-section .options{
     display: flex;
     justify-content: center;
+    align-items: center;
+ 
 }
 
 .customization-section input {
-
+    border: 1px solid black;
     margin-right: 0.5rem;
     height: 1.25rem;
     width: 1.25rem;
+    border: 1px solid #000;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
 }
+
+
+.customization-section input[type="checkbox"]:checked {
+    background-color: #000;
+    position: relative;
+}
+
+
+.customization-section input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+}
+
 
 .customization-section label {
     font-family: 'Inter', sans-serif;

@@ -15,7 +15,7 @@ export const Burger = {
     }
 }
 
-export const OtherBurger = {
+export const TripleCheese = {
     args :{
         img: '/Burgers/double-beef.jpg',
         productName: `TRIPLE CHEESE`,

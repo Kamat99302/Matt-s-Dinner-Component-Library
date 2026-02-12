@@ -1,7 +1,7 @@
 export default function Checkbox({type = "burger"}){
     return(
         <form className="customization-form">
-            {/* BURGER : Cooking + Sauces + Extras */}
+            {/* BURGER */}
             {type === "burger" && (
                 <>
                 <fieldset className="customization-section">
@@ -38,7 +38,7 @@ export default function Checkbox({type = "burger"}){
                 </>
             )}
 
-              {/* DRINK : Size + Ice */}
+              {/* DRINK */}
               {type === "drink" && (
                 <>
                     <fieldset className="customization-section">
@@ -65,7 +65,7 @@ export default function Checkbox({type = "burger"}){
                 </>
             )}
 
-            {/* FRIES : Size */}
+            {/* FRIES */}
             {type === "fries" && (
                 <fieldset className="customization-section">
                     <legend>Size</legend>
