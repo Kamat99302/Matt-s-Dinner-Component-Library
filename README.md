@@ -8,7 +8,7 @@ Bibliothèque de composants React pour interface de kiosque de restauration rapi
 
 ## Le projet
 
-Reproduction pixel-perfect de mon design Figma vers Storybook pour une borne de commande tactile type McDonald's/KFC.
+Reproduction de mon design Figma vers Storybook pour une borne de commande tactile type McDonald's/KFC.
 
 ⚠️ **Interface Kiosque (1080×1920)** 
 
