@@ -2,7 +2,7 @@
 
 Bibliothèque de composants React pour interface de kiosque de restauration rapide.
 
-![Preview](./docs/screenshots/hero.png)
+![Preview](./docs/hero.jpeg)
 
 ---
 
@@ -49,11 +49,10 @@ React 19 • Storybook 10 • Vite • CSS
 
 ## 📸 Figma → Storybook
 
-| Figma | Storybook |
-|-------|-----------|
-| ![](./docs/cartitemcard-figma.png) | ![](./docs/cartitemcard-storybook.png) |
-| ![](./docs/checkbox-figma.png) | ![](./docs/checkbox-storybook.png) |
-
+| Composant | Figma | Storybook |
+|-----------|-------|-----------|
+| CartItemCard | ![](./docs/cartitemcard-figma.jpeg) | ![](./docs/cartitemcard-storybook.jpeg) |
+| Checkbox | ![](./docs/checkbox-figma.jpeg) | ![](./docs/checkbox-storybook.jpeg)
 ---
 
 ## Défis techniques résolus
