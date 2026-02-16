@@ -1,3 +1,4 @@
+import './Checkbox.css'
 export default function Checkbox({type = "burger"}){
     return(
         <form className="customization-form">

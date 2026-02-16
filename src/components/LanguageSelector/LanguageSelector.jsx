@@ -1,8 +1,11 @@
+import frFlag from '../../assets/fr-flag.png'
+import ukFlag from '../../assets/uk-flag.png'
+import './LanguageSelector.css'
 export default function LanguageSelector(){
     return(
         <div className="flag-container">
-            <img src="/fr-flag.png" alt="French"></img>
-            <img src="/uk-flag.png" alt="English"></img>
+            <img src={frFlag} alt="French"></img>
+            <img src={ukFlag} alt="English"></img>
         </div>
     )
 }

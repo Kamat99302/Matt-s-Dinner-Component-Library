@@ -1,3 +1,4 @@
+import './CategoryTab.css'
 export default function CategoryTab({categories, activeIndex = 0}){
     return(
         <nav>

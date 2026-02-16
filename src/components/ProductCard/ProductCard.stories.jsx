@@ -13,7 +13,7 @@ export const MattsBurger = {
         badgeVariant: 'square',
         badgeText: 'Popular',
         showIcon: true,
-        img: '/Burgers/matts-burger.jpg',
+        img: '../../assets/Burgers/matts-burger.jpg',
         productName: `Matt's Burger`,
         productPrice: '4.90€'
     }

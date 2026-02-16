@@ -1,11 +1,23 @@
 {
   "name": "matts-dinner-component-library",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/matts-dinner-library.umd.js",
+  "module": "./dist/matts-dinner-library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/matts-dinner-library.es.js",
+      "require": "./dist/matts-dinner-library.umd.js"
+    },
+    "./dist/matts-dinner-component-library.css": "./dist/matts-dinner-component-library.css"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cpy \"src/assets/**\" dist/assets",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -29,6 +41,7 @@
     "@vitejs/plugin-react": "^5.1.1",
     "@vitest/browser-playwright": "^4.0.18",
     "@vitest/coverage-v8": "^4.0.18",
+    "cpy-cli": "^7.0.0",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
