@@ -1,5 +1,6 @@
 import Badge from "../Badge/Badge"
 import "../Badge/Badge.css"
+import '../ProductCard/ProductCard.css'
 export default function ProductCard({includeBadge = true, img, productName, productPrice, badgeColor="green", badgeVariant="square", showIcon, badgeText="New"}){
     return(
         <div className="card-container">

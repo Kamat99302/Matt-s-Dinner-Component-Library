@@ -9,7 +9,7 @@ export default{
 export const BurgersActive = {
     args: {
         categories : ['Burgers', 'Sides', 'Beverages', 'Desserts'],
-        activeIndex : 0
+        activeIndex : null
     }
 }
 

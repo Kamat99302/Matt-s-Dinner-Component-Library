@@ -1,9 +1,7 @@
 .header {
     box-sizing: border-box;
     margin: 0;
-    width: 67.5rem; 
-    min-width: 67.5rem; 
-    max-width: 67.5rem;           
+    width: 67.5rem;           
     height: 25rem;            
     background-color: #FFC700;
     overflow: hidden;         
@@ -11,20 +9,25 @@
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
 
 .header-left,
 .header-right {
-    width: 8rem;             
+    width: 7rem;
+    flex-shrink: 0;  /* ← Ne rétrécit jamais */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+
 }
 
 .header-logo {
-    height: 25rem;           
-    width: auto;             
+    position: absolute; /* ← Sort du flux flex */
+    height: 29.56rem;           
+    width: 54.313rem;             
     align-self: center; 
+    left: 10%;
+    margin-top: 1em;
 }
 
 .icon-back {
@@ -37,4 +40,8 @@
     width: 8rem;              
     height: 4.875rem;         
     cursor: pointer;
+}
+
+.header {
+    position: relative; /* ← Nécessaire pour le logo absolu */
 }
