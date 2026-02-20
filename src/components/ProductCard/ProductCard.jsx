@@ -1,9 +1,9 @@
 import Badge from "../Badge/Badge"
 import "../Badge/Badge.css"
 import '../ProductCard/ProductCard.css'
-export default function ProductCard({includeBadge = true, img, productName, productPrice, badgeColor="green", badgeVariant="square", showIcon, badgeText="New"}){
+export default function ProductCard({includeBadge = true, img, productName, productPrice, badgeColor="green", badgeVariant="square", showIcon, badgeText="New", onClick}){
     return(
-        <div className="card-container">
+        <div onClick={onClick} className="card-container">
             <div className="image-wrapper">
             {includeBadge && 
                     <Badge 

@@ -1,11 +1,9 @@
 .card-container{
-    width: 32.563rem;
-    height: 30.625rem;
+    width: 22.563rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .image-wrapper {
