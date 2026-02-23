@@ -1,7 +1,11 @@
+.customization-section, .customization-section * {
+    box-sizing: border-box;
+}
+
 .customization-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
 
 }
 
@@ -9,12 +13,16 @@
     border: 2px solid #000;
     border-radius: 0;
     padding-left: 1.2rem;
-    width: 28.5rem;
+    width: 29rem;
     background-color: #F5F5F5;
+    margin-inline: 0;        /* Évite les marges par défaut des navigateurs sur les fieldsets */
+    min-inline-size: 0;
   
 }
 
 .customization-section legend {
+    text-align: left; 
+    line-height: normal; 
     font-family: 'Inter', sans-serif;
     font-size: 2.1875rem;
     font-weight: 700;
@@ -23,8 +31,11 @@
 
 .customization-section .options{
     display: flex;
+    margin-left: 3px;
+    gap: 6px;
     justify-content: center;
     align-items: center;
+    text-align: left;
  
 }
 
@@ -33,7 +44,6 @@
     margin-right: 0.5rem;
     height: 1.25rem;
     width: 1.25rem;
-    border: 1px solid #000;
     appearance: none;
     -webkit-appearance: none;
     background-color: #fff;
@@ -43,6 +53,7 @@
 .customization-section input[type="checkbox"]:checked {
     background-color: #000;
     position: relative;
+    flex-shrink: 0;        
 }
 
 
@@ -54,12 +65,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 0.9rem;
+    flex-shrink: 0;        
 }
 
 
 .customization-section label {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
-    margin-right: 0.6rem;
+    margin-right: 0.3rem;
     font-weight: 600;
 }
