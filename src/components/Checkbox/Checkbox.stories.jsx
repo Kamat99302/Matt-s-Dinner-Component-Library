@@ -12,14 +12,27 @@ export const Burger = {
     }
 }
 
-export const Drink = {
+export const HotDrink = {
     args: {
-        type: "drink"
+        type: "hot-drink"
     }
 }
+
+export const ColdDrink = {
+    args: {
+        type: "cold-drink"
+    }
+}
+
 
 export const Fries = {
     args: {
         type: "fries"
+    }
+}
+
+export const Nuggets = {
+    args: {
+        type: "nuggets"
     }
 }
