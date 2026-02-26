@@ -8,9 +8,9 @@ export default function Checkbox({type = "burger"}){
                 <fieldset className="customization-section">
                     <legend>Cooking</legend>
                     <div className="options">
-                        <input type="checkbox" id="burger-medium"/>
+                        <input type="radio" id="burger-medium" name="burger-cooking"/>
                         <label htmlFor="burger-medium">Medium</label>
-                        <input type="checkbox" id="burger-well"/>
+                        <input type="radio" id="burger-well" name="burger-cooking"/>
                         <label htmlFor="burger-well">Well</label>
                 </div>
                 </fieldset>
@@ -45,11 +45,11 @@ export default function Checkbox({type = "burger"}){
                 <fieldset className="customization-section">
                     <legend>Size</legend>
                     <div className="options">
-                            <input type="radio" id="hot-small" name="size" />
+                            <input type="radio" id="hot-small" name="hot-drink-size"/>
                             <label htmlFor="hot-small">Small</label>
-                            <input type="radio" id="hot-medium" name="size" />
+                            <input type="radio" id="hot-medium" name="hot-drink-size"/>
                             <label htmlFor="hot-medium">Medium</label>
-                            <input type="radio" id="hot-large" name="size" />
+                            <input type="radio" id="hot-large" name="hot-drink-size"/>
                             <label htmlFor="hot-large">Large</label>
                     </div>
                 </fieldset>
@@ -57,7 +57,7 @@ export default function Checkbox({type = "burger"}){
                 <fieldset className="customization-section">
                     <legend>Options</legend>
                     <div className="options">
-                             <input type="checkbox" id="hot-milk" />
+                            <input type="checkbox" id="hot-milk" />
                             <label htmlFor="hot-milk">Add milk</label>
                             <input type="checkbox" id="hot-sugar" />
                             <label htmlFor="hot-sugar">Add sugar</label>
@@ -72,11 +72,11 @@ export default function Checkbox({type = "burger"}){
                     <fieldset className="customization-section">
                         <legend>Size</legend>
                         <div className="options">
-                                <input type="radio" id="cold-small" name="size" />
+                                <input type="radio" id="cold-small" name="cold-drink-size"/>
                                 <label htmlFor="cold-small">Small</label>
-                                <input type="radio" id="cold-medium" name="size" />
+                                <input type="radio" id="cold-medium" name="cold-drink-size"/>
                                 <label htmlFor="cold-medium">Medium</label>
-                                <input type="radio" id="cold-large" name="size" />
+                                <input type="radio" id="cold-large" name="cold-drink-size"/>
                                 <label htmlFor="cold-large">Large</label>
                         </div>
                     </fieldset>
@@ -99,21 +99,21 @@ export default function Checkbox({type = "burger"}){
                 <fieldset className="customization-section">
                     <legend>Size</legend>
                     <div className="options">
-                            <input type="radio" id="fries-medium" name="size" />
+                            <input type="radio" id="fries-medium" name="fries-size"/>
                             <label htmlFor="fries-medium">Medium</label>
-                            <input type="radio" id="fries-large" name="size" />
+                            <input type="radio" id="fries-large" name="fries-size"/>
                             <label htmlFor="fries-large">Large +1.50€</label>
                     </div>
                 </fieldset>
 
                 <fieldset className="customization-section">
-                <legend>Sauces</legend>
+                <legend>Sauce</legend>
                 <div className="options">
-                        <input type="radio" id="fries-ketchup" name="size" />
+                        <input type="radio" id="fries-ketchup" name="fries-sauce" />
                         <label htmlFor="fries-ketchup">Ketchup</label>
-                        <input type="radio" id="fries-mayo" name="size" />
+                        <input type="radio" id="fries-mayo" name="fries-sauce" />
                         <label htmlFor="fries-mayo">Mayo</label>
-                        <input type="radio" id="fries-bbq" name="size" />
+                        <input type="radio" id="fries-bbq" name="fries-sauce" />
                         <label htmlFor="fries-bbq">BBQ</label>
                 </div>
                 </fieldset>
@@ -121,9 +121,9 @@ export default function Checkbox({type = "burger"}){
                 <fieldset className="customization-section">
                 <legend>Extras</legend>
                 <div className="options">
-                        <input type="radio" id="fries-cheesy" name="size" />
+                        <input type="checkbox" id="fries-cheesy" />
                         <label htmlFor="fries-cheesy">Cheesy +1€</label>
-                        <input type="radio" id="fries-spicy" name="size" />
+                        <input type="checkbox" id="fries-spicy"  />
                         <label htmlFor="fries-spicy">Spicy +0.50€</label>
                 </div>
                 </fieldset>
@@ -136,23 +136,23 @@ export default function Checkbox({type = "burger"}){
                 <fieldset className="customization-section">
                     <legend>Size</legend>
                     <div className="options">
-                        <input type="radio" id="nuggets-4pcs" name="size" />
+                        <input type="radio" id="nuggets-4pcs" name="nuggets-size" />
                         <label htmlFor="nuggets-4pcs">4 pcs</label>
-                        <input type="radio" id="nuggets-9pcs" name="size" />
+                        <input type="radio" id="nuggets-9pcs" name="nuggets-size" />
                         <label htmlFor="nuggets-9pcs">9 pcs</label>
-                        <input type="radio" id="nuggets-15pcs" name="size" />
+                        <input type="radio" id="nuggets-15pcs" name="nuggets-size" />
                         <label htmlFor="nuggets-15pcs">15pcs</label>
                     </div>
                 </fieldset>
 
                 <fieldset className="customization-section">
-                    <legend>Sauces</legend>
+                    <legend>Sauce</legend>
                     <div className="options">
-                        <input type="checkbox" id="nuggets-ketchup"/>
+                        <input type="radio" id="nuggets-ketchup" name="nuggets-sauce"/>
                         <label htmlFor="nuggets-ketchup">Ketchup</label>
-                        <input type="checkbox" id="nuggets-chili"/>
+                        <input type="radio" id="nuggets-chili" name="nuggets-sauce"/>
                         <label htmlFor="nuggets-chili">Chili</label>
-                        <input type="checkbox" id="nuggets-bbq"/>
+                        <input type="radio" id="nuggets-bbq" name="nuggets-sauce"/>
                         <label htmlFor="nuggets-bbq">BBQ</label>
                 </div>
                 </fieldset>

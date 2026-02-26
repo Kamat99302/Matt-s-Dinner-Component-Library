@@ -50,14 +50,14 @@
 }
 
 
-.customization-section input[type="checkbox"]:checked {
+.customization-section input:checked {
     background-color: #000;
     position: relative;
     flex-shrink: 0;        
 }
 
 
-.customization-section input[type="checkbox"]:checked::after {
+.customization-section input:checked::after {
     content: "✓";
     color: #fff;
     position: absolute;
