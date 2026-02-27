@@ -1,13 +1,13 @@
 .cart-item-card {
     display: flex;
-    align-items: center;
-    max-width: 43.125rem;
+    align-items: flex-start;
+    width: 43.125rem;
     height: 15rem;
     border: 2px solid #000;
     background-color: #F5F5F5;
     border-radius: 0.625rem; 
     gap: 1.5rem;         
-    padding: 2.7rem 1.5rem; 
+    padding: 2.7rem 4rem 2.7rem 1.5rem;
 }
 
 .card-left {
@@ -16,7 +16,6 @@
     width: 11.25rem; 
     height: 8rem;      
     flex-shrink: 0;    
-    align-self: flex-start;
 }
 
 .card-left .product-image {
@@ -30,8 +29,9 @@
     display: flex;
     flex: 1;   
     flex-direction: column;
-    gap: 0.5rem;
-    padding-bottom: 2em;
+    justify-content: space-between; /* Aligne le nom en haut et la quantité en bas */
+    height: 8rem; /* Aligne la hauteur sur celle de l'image */
+
 }
 
 .product-name {
@@ -48,6 +48,11 @@
     margin: 0 0 0.5rem 0;  
 }
 
+.product-info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; /* Espace serré entre le titre et les options comme sur Figma */
+}
 
 .card-center .quantity-selector-container {
     flex-direction: row;      
@@ -83,14 +88,14 @@
 
 .card-right {
     display: flex;
-    margin-right: 1em;
     flex-direction: column;
-    justify-content: center;
-    padding-bottom: 2.2em;
-    gap: 2.7em;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 8rem;
+
 }
 
-.product-price {
+.card-product-price {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.625rem;
 }
@@ -99,5 +104,9 @@
     width: 1.68rem; 
     height: 1.68rem;
     cursor: pointer;
-    margin-left: 3em;
+    margin-left: 5;
+}
+
+.product-name, .card-product-price {
+    line-height: 0.8; /* Bebas Neue a souvent besoin d'un line-height < 1 pour être bien "top-aligned" */
 }

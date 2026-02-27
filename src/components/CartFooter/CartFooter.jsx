@@ -4,7 +4,7 @@ import LanguageSelector from "../LanguageSelector/LanguageSelector"
 import "../LanguageSelector/LanguageSelector.css"
 import '../CartFooter/CartFooter.css'
 import cartImg from '../../assets/cart.webp'
-export default function CartFooter({variant = 'summary'}){
+export default function CartFooter({variant = 'summary', onViewCart}){
     return(
       <footer className="cart-footer-container">
         {variant === 'summary'? (
@@ -15,7 +15,7 @@ export default function CartFooter({variant = 'summary'}){
                  <span className='cart-footer-price'>10.75€</span>
              </div>
              <div className='view-cart-btn'>
-                 <Button variant="primary-white" size='small'>VIEW CART</Button>
+                 <Button onClick={onViewCart} variant="primary-white" size='small'>VIEW CART</Button>
              </div>
          </div>) : variant === 'cart'? (
 

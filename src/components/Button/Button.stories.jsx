@@ -26,7 +26,7 @@ export const CompleteOrder = {
 
 export const AddToCart = {
     args:{
-        children: 'ADD TO CART 4.90€',
+        children: 'ADD TO CART',
         variant: 'primary-black',
         size: 'medium-inter',
         onClick: ''
