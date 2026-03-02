@@ -4,7 +4,7 @@ import LanguageSelector from "../LanguageSelector/LanguageSelector"
 import "../LanguageSelector/LanguageSelector.css"
 import '../CartFooter/CartFooter.css'
 import cartImg from '../../assets/cart.webp'
-export default function CartFooter({variant = 'summary', onViewCart}){
+export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, onClearCart}){
     return(
       <footer className="cart-footer-container">
         {variant === 'summary'? (
@@ -21,8 +21,8 @@ export default function CartFooter({variant = 'summary', onViewCart}){
 
              <div className='cart-footer-section'>
              <div className='footer-cart-btn'>
-                 <Button variant="primary-white" size='small'>MENU</Button>
-                 <Button variant="danger" size='small'>CLEAR CART</Button>
+                 <Button onClick={onGoMenu} variant="primary-white" size='small'>MENU</Button>
+                 <Button onClick={onClearCart} variant="danger" size='small'>CLEAR CART</Button>
              </div>
          </div>
          ) : null } 
