@@ -4,15 +4,15 @@ import LanguageSelector from "../LanguageSelector/LanguageSelector"
 import "../LanguageSelector/LanguageSelector.css"
 import '../CartFooter/CartFooter.css'
 import cartImg from '../../assets/cart.webp'
-export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, onClearCart}){
+export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, onClearCart, nbItems, totalPrice}){
     return(
       <footer className="cart-footer-container">
         {variant === 'summary'? (
              <div className='cart-footer-section'>
              <div className='cart-footer-info'>
                  <img src={cartImg} className='cart-footer-icon'/>
-                 <span className='cart-footer-nb-items'><span className='cart-footer-nb-item-number'>2</span> ITEM(S) • </span>
-                 <span className='cart-footer-price'>10.75€</span>
+                 <span className='cart-footer-nb-items'><span className='cart-footer-nb-item-number'>{nbItems}</span> ITEM(S) • </span>
+                 <span className='cart-footer-price'>{totalPrice} €</span>
              </div>
              <div className='view-cart-btn'>
                  <Button onClick={onViewCart} variant="primary-white" size='small'>VIEW CART</Button>
