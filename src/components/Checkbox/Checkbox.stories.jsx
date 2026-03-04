@@ -36,3 +36,9 @@ export const Nuggets = {
         type: "nuggets"
     }
 }
+
+export const SimpleSides = {
+    args: {
+        type: "simple-side"
+    }
+}
