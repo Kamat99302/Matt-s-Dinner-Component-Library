@@ -37,8 +37,9 @@ export const Nuggets = {
     }
 }
 
-export const SimpleSides = {
+
+export const IceCream = {
     args: {
-        type: "simple-side"
+        type: "ice-cream"
     }
 }

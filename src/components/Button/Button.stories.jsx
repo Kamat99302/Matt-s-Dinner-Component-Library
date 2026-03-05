@@ -11,7 +11,7 @@ export const TouchToOrder = {
         children: 'Touch to order',
         variant: 'primary-black',
         size: 'large',
-        onClick: ''
+        onClick: '',
     }
 }
 
@@ -20,7 +20,8 @@ export const CompleteOrder = {
         children: 'COMPLETE ORDER',
         variant: 'primary-black',
         size: 'medium-bebas',
-        onClick: ''
+        onClick: '',
+        disabled: true
     }
 }
 
