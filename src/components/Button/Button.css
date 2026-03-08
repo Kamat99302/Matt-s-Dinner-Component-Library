@@ -1,8 +1,13 @@
 .button {
     border: none;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: transform 0.1s ease;
   }
+
+
+.button:active {
+    transform: scale(0.90);
+}
 
 .button-primary-black{
     background-color: #FFC700;

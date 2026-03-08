@@ -1,16 +1,25 @@
 import Button from "../Button/Button"
+import { useState, useEffect } from "react"
 import "../Button/Button.css"
 import LanguageSelector from "../LanguageSelector/LanguageSelector"
 import "../LanguageSelector/LanguageSelector.css"
 import '../CartFooter/CartFooter.css'
 import cartImg from '../../assets/cart.webp'
-export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, onClearCart, nbItems, totalPrice}){
+export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, onClearCart, nbItems, totalPrice, onLanguageChange}){
+    const [isBouncing, setIsBouncing] = useState(false)
+
+    useEffect(()=>{
+        if (nbItems > 0){
+            setIsBouncing(true)
+            setTimeout(()=>setIsBouncing(false), 400)
+        }
+    }, [nbItems])
     return(
       <footer className="cart-footer-container">
         {variant === 'summary'? (
              <div className='cart-footer-section'>
              <div className='cart-footer-info'>
-                 <img src={cartImg} className='cart-footer-icon'/>
+                 <img src={cartImg} className={`cart-footer-icon ${isBouncing? 'bounce' : ''}`}/>
                  <span className='cart-footer-nb-items'><span className='cart-footer-nb-item-number'>{nbItems}</span> ITEM(S) • </span>
                  <span className='cart-footer-price'>{totalPrice} €</span>
              </div>
@@ -29,7 +38,7 @@ export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, o
        
 
         <div className='language-selector-container'>
-            <LanguageSelector></LanguageSelector>
+            <LanguageSelector onLanguageChange={onLanguageChange}></LanguageSelector>
         </div>
     </footer>
     )

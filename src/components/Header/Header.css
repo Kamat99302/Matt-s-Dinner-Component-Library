@@ -34,12 +34,21 @@
     width: 5.25rem;           
     height: 5.25rem;
     cursor: pointer;
+    transition: transform 0.1s ease;
 }
+
+.icon-back:active,
+.icon-cart:active{
+    transform: scale(0.90);
+}
+
+
 
 .icon-cart {
     width: 8rem;              
     height: 4.875rem;         
     cursor: pointer;
+    transition: transform 0.1s ease;
 }
 
 .header {

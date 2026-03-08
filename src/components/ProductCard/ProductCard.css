@@ -4,6 +4,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: transform 0.1s ease;
+}
+
+.card-container:active{
+    transform: scale(0.90);
 }
 
 .image-wrapper {
