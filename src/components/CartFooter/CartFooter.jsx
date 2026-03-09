@@ -5,7 +5,7 @@ import LanguageSelector from "../LanguageSelector/LanguageSelector"
 import "../LanguageSelector/LanguageSelector.css"
 import '../CartFooter/CartFooter.css'
 import cartImg from '../../assets/cart.webp'
-export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, onClearCart, nbItems, totalPrice, onLanguageChange}){
+export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, onClearCart, nbItems, totalPrice, onLanguageChange, viewCartLabel, menuLabel, clearCartLabel}){
     const [isBouncing, setIsBouncing] = useState(false)
 
     useEffect(()=>{
@@ -24,14 +24,14 @@ export default function CartFooter({variant = 'summary', onViewCart, onGoMenu, o
                  <span className='cart-footer-price'>{totalPrice} €</span>
              </div>
              <div className='view-cart-btn'>
-                 <Button onClick={onViewCart} variant="primary-white" size='small'>VIEW CART</Button>
+                 <Button onClick={onViewCart} variant="primary-white" size='small'>{viewCartLabel}</Button>
              </div>
          </div>) : variant === 'cart'? (
 
              <div className='cart-footer-section'>
              <div className='footer-cart-btn'>
-                 <Button onClick={onGoMenu} variant="primary-white" size='small'>MENU</Button>
-                 <Button onClick={onClearCart} variant="danger" size='small'>CLEAR CART</Button>
+                 <Button onClick={onGoMenu} variant="primary-white" size='small'>{menuLabel || 'MENU'}</Button>
+                 <Button onClick={onClearCart} variant="danger" size='small'>{clearCartLabel || 'CLEAR CART'}</Button>
              </div>
          </div>
          ) : null } 

@@ -3,6 +3,7 @@ nav{
     justify-content: center;
     font-family: 'Inter', sans-serif;
     width: 100%;   
+    
 }
 
 ul{
@@ -11,6 +12,7 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 li{
