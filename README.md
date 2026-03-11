@@ -2,7 +2,7 @@
 
 Bibliothèque de composants React pour interface de kiosque de restauration rapide. Publiée sur npm.
 
-![Preview](./docs/hero.PNG)
+![Preview](https://raw.githubusercontent.com/Kamat99302/Matt-s-Dinner-Component-Library/refs/heads/main/docs/hero.PNG)
 
 ---
 
@@ -74,8 +74,8 @@ Exemple : les labels des boutons dans CartFooter sont passés en props (`viewCar
 
 | Composant | Figma | Storybook |
 |-----------|-------|-----------|
-| CartItemCard | ![](./docs/cartitemcard-figma.jpeg) | ![](./docs/cartitemcard-storybook.jpeg) |
-| Checkbox | ![](./docs/checkbox-figma.jpeg) | ![](./docs/checkbox-storybook.jpeg) |
+| CartItemCard | ![](https://raw.githubusercontent.com/Kamat99302/Matt-s-Dinner-Component-Library/main/docs/cartitemcard-figma.jpeg) | ![](https://raw.githubusercontent.com/Kamat99302/Matt-s-Dinner-Component-Library/main/docs/cartitemcard-storybook.jpeg) |
+| Checkbox | ![](https://raw.githubusercontent.com/Kamat99302/Matt-s-Dinner-Component-Library/main/docs/checkbox-figma.jpeg) | ![](https://raw.githubusercontent.com/Kamat99302/Matt-s-Dinner-Component-Library/main/docs/checkbox-storybook.jpeg) |
 
 ---
 
