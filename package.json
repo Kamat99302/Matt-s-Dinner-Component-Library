@@ -1,7 +1,7 @@
 {
   "name": "matts-dinner-component-library",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.5",
   "type": "module",
   "main": "./dist/matts-dinner-library.umd.js",
   "module": "./dist/matts-dinner-library.es.js",
@@ -14,7 +14,7 @@
   },
   "files": [
     "dist",
-    "README.MD"
+    "README.md"
   ],
   "scripts": {
     "dev": "vite",
