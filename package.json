@@ -1,7 +1,7 @@
 {
   "name": "matts-dinner-component-library",
   "private": false,
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "main": "./dist/matts-dinner-library.umd.js",
   "module": "./dist/matts-dinner-library.es.js",
@@ -24,14 +24,13 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  
   "peerDependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
-},
-"dependencies": {
+  },
+  "dependencies": {
     "react-icons": "^5.5.0"
-},
+  },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.0.0",
     "@eslint/js": "^9.39.1",
