@@ -2,7 +2,7 @@ import QuantitySelector from '../QuantitySelector/QuantitySelector'
 import '../QuantitySelector/QuantitySelector.css'
 import './CartItemCard.css'
 
-export default function CartItemCard({productImg, productName, productOptions, productPrice, deleteIcon, imgAdd, imgRemove, quantity, onDeleteItem}){
+export default function CartItemCard({productImg, productName, productOptions, productPrice, deleteIcon, imgAdd, imgRemove, quantity, onDeleteItem, onIncrement, onDecrement}){
     return(
         <div className="cart-item-card">
             <div className="card-left">
@@ -14,6 +14,8 @@ export default function CartItemCard({productImg, productName, productOptions, p
                     <p className="product-options">{productOptions}</p>
                 </div>
                 <QuantitySelector
+                    onIncrement={onIncrement}
+                    onDecrement={onDecrement}
                     imgRemove={imgRemove}
                     imgAdd={imgAdd}
                     label="Qty: "
